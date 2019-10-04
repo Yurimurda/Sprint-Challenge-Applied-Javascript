@@ -15,13 +15,12 @@ const topicsArray = [];
 
 axios.get('https://lambda-times-backend.herokuapp.com/topics')
 .then(response => {
+    Array.from(response);
   console.log(response);
   const qTab = document.querySelector('.topics');
-  response.array.forEach(element => {
-      return element;
-  });
   const otherQTab = newTab(response.data);
   qTab.appendChild(otherQTab);
+  
 })
 .catch(error => {
   console.log("The data was not returned", error);
