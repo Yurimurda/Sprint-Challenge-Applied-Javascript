@@ -14,12 +14,12 @@
 axios.get('https://lambda-times-backend.herokuapp.com/topics')
 .then(response => {
     const dataArray = response.data.topics
-  console.log(response.data.topics)
+//   console.log(response.data.topics)
   dataArray.forEach(element => {
     newTab(element);
   });
   
-  console.log(topics)
+//   console.log(topics)
 })
 .catch(error => {
   console.log("The data was not returned", error);
