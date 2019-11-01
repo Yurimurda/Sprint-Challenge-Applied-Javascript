@@ -30,13 +30,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+## The "Document Object Model" represents the document as Objects and Nodes which can be manipulated via JavaScript.
+
 2. What is an event?
+
+## A reaction programmed in Javascript triggered by interaction on the HTML.
 
 3. What is an event listener?
 
+## A method that sets an Event handler to the specific element.
+
 4. Why would we convert a NodeList into an Array?
 
+## NodeLists are lacking in their capabilities as opposed to Arrays. forEach, map, and filter are all examples of what a NodeList cannot do but an Array can.
+
 5. What is a component?
+
+## A series of reusable custom elements 
 
 ### Git Set up
 
