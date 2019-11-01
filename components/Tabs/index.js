@@ -14,12 +14,10 @@
 axios.get('https://lambda-times-backend.herokuapp.com/topics')
 .then(response => {
     const dataArray = response.data.topics
-//   console.log(response.data.topics)
   dataArray.forEach(element => {
     newTab(element);
   });
   
-//   console.log(topics)
 })
 .catch(error => {
   console.log("The data was not returned", error);
@@ -34,9 +32,6 @@ axios.get('https://lambda-times-backend.herokuapp.com/topics')
 function newTab (item){
     const tab = document.createElement('div');
     tab.classList.add('tab');
-    // data.topics.map(topic =>{
-    //     console.log(topic)
-    // })
     tab.textContent = item
     const topics = document.querySelector('.topics')
     topics.appendChild(tab)
